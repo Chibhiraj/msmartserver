@@ -115,7 +115,7 @@ app.post("/api/myroom", async (req, res) => {
   try {
     const updatedHall = await MyRoom.findOneAndUpdate({}, req.body);
     const topic = "topic/viktestPOC";
-    const id = "48:E7:29:6D:73:4A";
+    const id = "40:91:51:58:BA:58";
     const {RLight,RFan,RAc,RWifi}=req.body;
     const message = JSON.stringify({
     id: id,
